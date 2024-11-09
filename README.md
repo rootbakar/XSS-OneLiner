@@ -20,6 +20,9 @@ go install -v github.com/Emoe/kxss@latest
 ```bash
 go install github.com/rix4uni/xsschecker@latest
 ```
+```bash
+sudo cp ~/go/bin/kxss ~/go/bin/xsschecker /usr/local/bin
+```
 
 ### Get All URLs
 ```bash
