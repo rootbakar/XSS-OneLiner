@@ -50,3 +50,14 @@ cat urls.txt  | qsreplace '"><img src=x onerror=alert(1)>' | freq | egrep -v 'No
 ![image](https://github.com/user-attachments/assets/017f6824-6b56-4d4c-a02d-f8aea95070c9)
 
 
+**Command 4:**
+```bash
+cat urls.txt | nuclei -silent -t ~/nuclei-templates/dast/vulnerabilities/xss -dast
+```
+```bash
+nuclei -silent -list urls.txt -t ~/nuclei-templates/dast/vulnerabilities/xss -dast
+```
+<img width="1440" alt="image" src="https://github.com/user-attachments/assets/c0ec71e7-1d29-41c2-b756-6abdd766f782">
+
+
+
