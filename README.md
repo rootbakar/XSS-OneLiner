@@ -21,6 +21,11 @@ go install -v github.com/Emoe/kxss@latest
 go install github.com/rix4uni/xsschecker@latest
 ```
 
+### Get All URLs
+```bash
+echo "testphp.vulnweb.com" | httpx -silent | katana -silent > katana.txt; echo "testphp.vulnweb.com" | httpx -silent | hakrawler -u > hakrawler.txt; echo "testphp.vulnweb.com" | waybackurls > waybackurls.txt; echo "testphp.vulnweb.com" | gau > gau.txt; cat katana.txt hakrawler.txt waybackurls.txt gau.txt | urldedupe -qs | httpx -silent | anew urls.txt
+```
+
 ### XSS One Liner
 **Command 1:**
 ```bash
